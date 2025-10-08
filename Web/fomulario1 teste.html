@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt.br">
+    <head>
+        <title>Meu Primeiro Formulario</title>
+        <link rel="stylesheet" href="styletabela.css">
+    </head>
+    <body>
+        <h1><center>Tabela de Dados de Exemplo</center></h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Cidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td>Ana Silva</td>
+                    <td>25</td>
+                    <td>Fortaleza</td>
+                </tr>
+                <tr>
+                    
+                    <td>João Souza</td>
+                    <td>30</td>
+                    <td>Acopiara</td>
+                </tr>
+                <tr>
+                    <td>Maria Oliveira</td>
+                    <td>28</td>
+                    <td>Tribo Irapuan</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <img src="" alt="Imagem Do Melhor Jogador Do Mundo">
+        <br>
+        <br>
+        <a href="https://youtu.be/KeD5UY-DIkc?si=l4Jj4h5t6TiSYXXr">Video de apoio para aprender a fazer o codigo.</a>
+        <br>
+         <h1><center>Formulario em HTML</center></h1>
+        <br>
+        <br>
+        <form action="/submit" method="POST">
+            <!-- Campo de Texto -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <!-- Campo de E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <!-- Campo de Senha -->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+    
+            <!-- Radio Buttons -->
+            <div class="radio-group">
+                <label>Gênero:</label>
+                <label for="masculino">
+                    <input type="radio" id="masculino" name="genero" value="masculino"> Masculino
+                </label>
+                <label for="feminino">
+                    <input type="radio" id="feminino" name="genero" value="feminino"> Feminino
+                </label>
+                <label for="outro">
+                    <input type="radio" id="outro" name="genero" value="outro"> Outro
+                </label>
+            </div>
+    
+            <!-- Checkbox -->
+            <div class="checkbox-group">
+                <label>Interesses:</label>
+                <label for="musica">
+                    <input type="checkbox" id="musica" name="interesses" value="musica"> Música
+                </label>
+                <label for="filmes">
+                    <input type="checkbox" id="filmes" name="interesses" value="filmes"> Filmes
+                </label>
+                <label for="esportes">
+                    <input type="checkbox" id="esportes" name="interesses" value="esportes"> Esportes
+                </label>
+            </div>
+    
+            <!-- Campo de Texto -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    
+            <!-- Botão de Envio -->
+            <button type="submit">Enviar</button>
+        </form>
+        <h2>Exemplo de Áudio com Mensagem Alternativa</h2>
+
+        <audio controls>
+            <source src="audio/voz.mp3" type="audio/mp3">
+            <p>Seu navegador não suporta o elemento de áudio. Por favor, atualize seu navegador ou use um que tenha suporte para áudio HTML5.</p>
+        </audio>
+    </body>
+    </html>
